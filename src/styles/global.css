@@ -1,0 +1,202 @@
+/* global.css */
+.page-container {
+    display: flex;
+  }
+  
+  .page-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 250px; /* Adjust the value based on the width of your sidebar */
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #2C3E50; /* Sidebar background color */
+  padding-top: 20px;
+  color: #ECF0F1; /* Sidebar text color */
+  z-index: 1; /* Ensure the sidebar is positioned on top of the content */
+}
+
+.sidebar h2 {
+  text-align: center;
+  color: #3498DB; /* Header color */
+}
+
+.sidebar h3 {
+  text-align: center;
+  color: #E74C3C; /* Different color for another header */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Style for links */
+.sidebar a {
+  color: #ECF0F1; /* Link color */
+  text-decoration: none;
+}
+
+/* Hover effect for links */
+.sidebar a:hover {
+  color: #3498DB; /* Hover color */
+}
+
+.home-container {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+/* global.css */
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 50px;
+}
+
+.login-container h2 {
+  text-align: center;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container label {
+  margin-bottom: 10px;
+}
+
+.login-container input {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.login-container button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #45a049;
+}
+
+/* Login page*/
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 50px;
+  }
+  
+.login-container h2 {
+text-align: center;
+}
+
+.login-container form {
+display: flex;
+flex-direction: column;
+}
+
+.login-container label {
+margin-bottom: 10px;
+}
+
+.login-container input {
+padding: 10px;
+margin-bottom: 15px;
+}
+
+.login-container button {
+padding: 10px;
+background-color: #4caf50;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.login-container button:hover {
+background-color: #45a049;
+}
+
+/*form*/
+.stacked-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* Adjust the max-width as needed */
+    margin: auto;
+  }
+  
+  .stacked-form label {
+    margin-bottom: 10px;
+  }
+  
+  .stacked-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+/* Table styles */
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table-container th, .table-container td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .table-container th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Action buttons in the table */
+  .table-container button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .table-container button:hover {
+    background-color: #005580;
+  }
+
