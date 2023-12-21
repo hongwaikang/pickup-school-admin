@@ -56,6 +56,7 @@ const ManageTeachers = () => {
                 <th>Name</th>
                 <th>Staff ID</th>
                 <th>Class</th>
+                <th>Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -64,6 +65,15 @@ const ManageTeachers = () => {
                   <td>{teacher.name}</td>
                   <td>{teacher.staffId}</td>
                   <td>{teacher.class}</td>
+                  <td>
+                    <button>
+                      Edit
+                    </button>
+                    {' | '}
+                    <button>
+                      Delete
+                    </button>
+                  </td>
                 </tr>
               ))}
             </tbody>
