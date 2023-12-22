@@ -1,10 +1,10 @@
 // ManageClasses.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Correct import
-import Sidebar from '../components/Sidebar';
+import SchAdSidebar from '../components/SchAdSidebar';
 import '../styles/global.css';
 
-const ManageClasses = () => {
+const SchAdManageClasses = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate(); // Correct hook
 
@@ -34,7 +34,7 @@ const ManageClasses = () => {
 
   return (
     <div className="page-container">
-      <Sidebar />
+      <SchAdSidebar />
       <div className="page-content">
         <h2>Manage Classes</h2>
         {/* Search bar */}
@@ -86,4 +86,4 @@ const ManageClasses = () => {
   );
 };
 
-export default ManageClasses;
+export default SchAdManageClasses;

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
+import { useNavigate } from 'react-router-dom';
 import '../styles/global.css';
 
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate(); // Initialize the navigate function
+  const navigate = useNavigate();
 
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
@@ -22,8 +22,15 @@ const Login = () => {
     console.log('Username:', username);
     console.log('Password:', password);
 
-    // Redirect to Home after successful authentication
-    navigate('/home');
+    // Check the entered username and navigate accordingly
+    if (username.toLowerCase() === 'sysadmin') {
+      navigate('/sys-admin-home');
+    } else if (username.toLowerCase() === 'schooladmin') {
+      navigate('/school-admin-home');
+    } else {
+      // Handle other cases or show an error message
+      console.log('Invalid username');
+    }
 
     // Reset the form fields (optional)
     setUsername('');

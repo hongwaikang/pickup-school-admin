@@ -1,10 +1,10 @@
 // AddStudent.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Sidebar from '../components/Sidebar';
+import SchAdSidebar from '../components/SchAdSidebar';
 import '../styles/global.css';
 
-const AddStudent = () => {
+const SchAdAddStudent = () => {
   const [studentId, setStudentId] = useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -94,7 +94,7 @@ const AddStudent = () => {
 
   return (
     <div className="page-container">
-      <Sidebar />
+      <SchAdSidebar />
       <div className="page-content">
         <h2>Add Student</h2>
         <form className="stacked-form" onSubmit={handleSubmit}>
@@ -142,4 +142,4 @@ const AddStudent = () => {
   );
 };
 
-export default AddStudent;
+export default SchAdAddStudent;

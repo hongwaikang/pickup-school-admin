@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Sidebar from '../components/Sidebar';
+import SchAdSidebar from '../components/SchAdSidebar';
 import '../styles/global.css';
 
-const ManageTeachers = () => {
+const SchAdManageTeachers = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate(); // Get the navigate function
 
@@ -32,7 +32,7 @@ const ManageTeachers = () => {
 
   return (
     <div className="page-container">
-      <Sidebar />
+      <SchAdSidebar />
       <div className="page-content">
         <h2>Manage Teachers</h2>
         {/* Search bar */}
@@ -84,4 +84,4 @@ const ManageTeachers = () => {
   );
 };
 
-export default ManageTeachers;
+export default SchAdManageTeachers;

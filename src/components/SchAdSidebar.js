@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/global.css';
 
-const Sidebar = () => {
+const SchAdSidebar = () => {
   return (
     <div className="sidebar">
       <h2>School Admin Dashboard</h2>
       <h3>School Name</h3>
       <ul>
-        <li><Link to="/home">Home</Link></li>
+        <li><Link to="/school-admin-home">Home</Link></li>
         <li><Link to="/manage-classes">Manage Classes</Link></li>
         <li><Link to="/manage-teachers">Manage Teachers</Link></li>
         <li><Link to="/manage-students">Manage Students</Link></li>
@@ -20,4 +20,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default SchAdSidebar;

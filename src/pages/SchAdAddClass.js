@@ -1,10 +1,10 @@
 // AddClass.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
-import Sidebar from '../components/Sidebar';
+import SchAdSidebar from '../components/SchAdSidebar';
 import '../styles/global.css';
 
-const AddClass = () => {
+const SchAdAddClass = () => {
   const [className, setClassName] = useState('');
   const [grade, setGrade] = useState('');
   const [teacherInCharge, setTeacherInCharge] = useState('');
@@ -54,7 +54,7 @@ const AddClass = () => {
 
   return (
     <div className="page-container">
-      <Sidebar />
+      <SchAdSidebar />
       <div className="page-content">
         <h2>Add Class</h2>
         <form className="stacked-form" onSubmit={handleSubmit}>
@@ -82,4 +82,4 @@ const AddClass = () => {
   );
 };
 
-export default AddClass;
+export default SchAdAddClass;
